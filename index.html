@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Birthday Gift untuk Suci</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Untuk Adik Tersayang — Suci Okta Ramadhana ♡</title>
+<style>
+:root{--pink:#f6a8c4;--rose:#d95f8d;--deep:#8d3458;--cream:#fff9f5;--ink:#63384b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#fff6f9,#fffaf5 55%,#fff0f5);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.wrap{width:min(1080px,92%);margin:auto}
+header{min-height:100vh;display:grid;place-items:center;text-align:center;padding:78px 18px 65px;position:relative;isolation:isolate;overflow:hidden}
+header:before,header:after{content:"";position:absolute;border-radius:50%;z-index:-1;filter:blur(2px)}
+header:before{width:340px;height:340px;background:#ffdce8;top:-90px;left:-100px;opacity:.8}
+header:after{width:300px;height:300px;background:#ffe8d8;bottom:-100px;right:-70px;opacity:.8}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:600 .72rem Arial,sans-serif;color:var(--rose)}
+h1{font-size:clamp(2.8rem,8vw,6.3rem);font-weight:normal;line-height:.98;margin:20px 0;color:var(--deep)}h1 em{font-weight:normal;color:var(--rose)}
+.lead{max-width:600px;margin:20px auto 28px;font-size:clamp(1rem,2.4vw,1.25rem);line-height:1.8}
+.btn{border:0;border-radius:999px;background:var(--rose);color:white;padding:14px 23px;box-shadow:0 9px 24px #d95f8d33;transition:.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{transform:translateY(-2px);background:var(--deep)}.hero-note{margin-top:15px;font:.82rem Arial,sans-serif;color:#a96a83}
+section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.kicker{font:600 .7rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+h2{font-size:clamp(2rem,5vw,3.3rem);font-weight:normal;margin:12px 0;color:var(--deep)}.section-head p{line-height:1.8;margin:0}
+.letter-card{max-width:760px;margin:auto;background:#fffdfb;border:1px solid #f7d9e3;border-radius:26px;padding:clamp(25px,6vw,55px);box-shadow:0 18px 55px #9e426014;position:relative}
+.letter-card:before{content:"♡";position:absolute;right:25px;top:14px;color:#f3b2c8;font-size:2rem}
+.letter-card p{font-size:1.08rem;line-height:1.95;margin:0 0 17px}.signature{font-style:italic;color:var(--rose);font-size:1.35rem;margin-top:24px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.photo{background:white;padding:12px 12px 18px;border-radius:8px;box-shadow:0 12px 30px #9e426014;transform:rotate(var(--tilt));transition:transform .25s}
+.photo:hover{transform:rotate(0) translateY(-5px)}.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#ffe3ed;border-radius:4px}
+.placeholder{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:15px;background:linear-gradient(145deg,#ffe1eb,#fff2df);font-size:2.5rem}.photo p{text-align:center;margin:13px 2px 0;font-size:1rem}
+.video-card{max-width:420px;margin:0 auto;background:#fff;padding:10px;border-radius:20px;box-shadow:0 12px 30px #9e426014}.video-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#1a1016;border-radius:14px;max-height:75vh}\n.tip{text-align:center;font:.83rem/1.7 Arial,sans-serif;color:#a96a83;margin-top:18px}
+.cake-area{background:linear-gradient(135deg,#fff0f5,#fff9f1);border-radius:30px;padding:34px 15px 40px;text-align:center;border:1px solid #f8dbe5}
+.cake{position:relative;width:210px;height:190px;margin:12px auto 25px}.candle{position:absolute;top:0;left:50%;transform:translateX(-50%);width:12px;height:49px;border-radius:4px;background:repeating-linear-gradient(135deg,#fff 0 6px,#f7a2bf 6px 12px);z-index:3}
+.flame{position:absolute;top:-25px;left:50%;transform:translateX(-50%);width:18px;height:25px;background:radial-gradient(ellipse at 50% 70%,#fff7a7 0 22%,#ffb34f 45%,#ff6f72 70%,transparent 73%);border-radius:50% 50% 45% 45%;animation:flicker .7s infinite alternate;filter:drop-shadow(0 0 9px #ffb34f)}.flame.off{display:none}
+.icing{position:absolute;top:49px;left:15px;width:180px;height:42px;border-radius:50% 50% 18px 18px;background:#fff7fb;border:2px solid #f3bdd0;z-index:2}
+.icing:after{content:"";position:absolute;left:18px;right:15px;bottom:-15px;height:23px;background:radial-gradient(circle at 12px 0,#fff7fb 0 12px,transparent 13px) 0 0/35px 25px repeat-x}
+.cake-body{position:absolute;top:73px;left:15px;width:180px;height:83px;border-radius:8px 8px 18px 18px;background:linear-gradient(90deg,#f6a8c4,#ffd1df 48%,#f6a8c4);box-shadow:inset 0 -12px #e78caf}
+.plate{position:absolute;bottom:12px;left:0;width:210px;height:22px;border-radius:50%;background:#fff;border:2px solid #f5cada}.sprinkle{position:absolute;top:83px;left:48px;color:#b94e78;z-index:4;font-size:1.15rem}
+.cake-message{line-height:1.8;max-width:500px;margin:0 auto 20px}.secret{max-width:700px;margin:auto;text-align:center}
+.envelope{width:150px;height:100px;margin:22px auto;position:relative;background:#f6a8c4;border-radius:8px;box-shadow:0 10px 25px #d95f8d22;display:grid;place-items:center;color:white;font-size:2.2rem}
+.envelope:before{content:"";position:absolute;top:0;left:0;right:0;margin:auto;width:0;height:0;border-left:75px solid transparent;border-right:75px solid transparent;border-top:52px solid #ffd7e4;filter:drop-shadow(0 2px 0 #e98eb0)}
+.secret-message{display:none;background:#fff;border:1px solid #f5d4df;border-radius:22px;padding:clamp(22px,5vw,38px);margin:20px auto;line-height:1.95;text-align:left;animation:rise .5s ease;max-width:650px}
+.secret-message.show{display:block}.secret-message p{margin:0 0 17px}.secret-message .closing{text-align:right;color:var(--rose);font-style:italic}
+.music-panel{position:fixed;right:14px;bottom:14px;z-index:10;display:flex;gap:7px;align-items:center;background:#fffafc;border:1px solid #f2bfd0;border-radius:18px;padding:9px;box-shadow:0 8px 25px #73334a20;max-width:calc(100vw - 28px)}
+.music-panel button{border:0;background:var(--rose);color:white;border-radius:999px;padding:10px 13px;font:.82rem Arial,sans-serif;white-space:nowrap}
+.music-panel input{max-width:145px;width:30vw;font:.72rem Arial,sans-serif;color:var(--ink)}.music-label{font:.72rem Arial,sans-serif;color:var(--deep);max-width:90px}
+footer{text-align:center;padding:35px 15px 50px;color:#a96a83;font-size:.95rem}.heart{position:fixed;bottom:-30px;pointer-events:none;z-index:20;animation:floatUp linear forwards;opacity:.8}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}@keyframes flicker{from{transform:translateX(-50%) rotate(-4deg) scale(.94)}to{transform:translateX(-50%) rotate(4deg) scale(1.06)}}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.gallery{grid-template-columns:1fr;max-width:340px;margin:auto;gap:25px}.photo{transform:rotate(0)}section{padding:58px 0}.music-panel{right:8px;bottom:8px;padding:7px}.music-label{display:none}.music-panel input{max-width:115px}.lead{line-height:1.7}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
 </head>
 <body>
-  <h1>Selamat Ulang Tahun, Suci! ❤️</h1>
-  <p>Semoga harimu penuh kebahagiaan.</p>
-</body>
-</html>
+<div class="music-panel">
+  <span class="music-label">Musik untuk Adik ♡</span>
+  <button id="musicBtn" type="button">▶ Putar Bergema Sampai Selamanya</button>
+  <audio id="bgMusic" loop preload="metadata"><source src="music/bergema-sampai-selamanya.mp3" type="audio/mpeg"></audio>
+</div>
+
+<header id="home"><div class="wrap">
+  <div class="eyebrow">A little surprise, made with love</div>
+  <h1>Happy Birthday,<br><em>Adik Sayang ♡</em></h1>
+  <p class="lead">Selamat ulang tahun ke-22, <strong>Suci Okta Ramadhana</strong>. Hari ini adalah tentang Adik—seseorang yang begitu berharga bagi Abang.</p>
+  <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Buka hadiah kecilmu <span>♡</span></button>
+  <div class="hero-note">22 Oktober 2026 · dari Abang mu tersayang</div>
+</div></header>
+
+<main>
+<section id="letter"><div class="wrap">
+  <div class="section-head"><div class="kicker">From my heart</div><h2>Surat kecil untuk Adik</h2><p>Untuk seseorang yang selalu punya tempat istimewa di hati Abang.</p></div>
+  <article class="letter-card">
+    <p>Untuk Adik tersayang, Suci Okta Ramadhana,</p>
+    <p>Selamat ulang tahun, Adik. ♡ Semoga bertambahnya usia membawa lebih banyak kebahagiaan, kesehatan, ketenangan, dan hal-hal indah ke dalam hidup Adik.</p>
+    <p>Abang berdoa semoga setiap langkah Adik dimudahkan, semua impian baik Adik perlahan menjadi nyata, dan Adik selalu dikelilingi orang-orang yang tulus menyayangi serta mendukung Adik. Kalau suatu hari terasa berat, semoga Adik tetap ingat bahwa Adik kuat dan berharga.</p>
+    <p>Terima kasih sudah menjadi Adik yang istimewa. Jangan lupa menjaga diri, memberi ruang untuk beristirahat, dan tetap tersenyum. Adik pantas bahagia bukan hanya hari ini, tetapi juga di hari-hari biasa setelah ulang tahun ini berlalu.</p>
+    <p>Semoga semua doa baik yang Adik simpan di dalam hati satu per satu menemukan jalannya. Abang selalu berharap yang terbaik untuk Adik.</p>
+    <p class="signature">Dengan sayang dan doa terbaik,<br>Abang mu tersayang ♡</p>
+  </article>
+</div></section>
+
+<section id="memories"><div class="wrap">
+  <div class="section-head"><div class="kicker">Little moments, big feelings</div><h2>Galeri untuk Adik</h2><p>Potongan kenangan kecil yang selalu punya tempat istimewa di hati Abang. ♡</p></div>
+  <div class="gallery">
+    <div class="photo" style="--tilt:-2deg"><img src="images/kenangan-1.jpg" alt="Kolase kenangan kita 1" loading="lazy"><p>Senyum manis Adik ♡</p></div>
+    <div class="photo" style="--tilt:1.5deg"><img src="images/kenangan-2.jpg" alt="Kolase kenangan kita 2" loading="lazy"><p>Kenangan yang indah ♡</p></div>
+    <div class="photo" style="--tilt:-1deg"><img src="images/kenangan-3.jpg" alt="Kolase kenangan kita 3" loading="lazy"><p>Semoga banyak bahagia lagi ♡</p></div>
+  </div>
+  <p class="tip">Setiap foto menyimpan cerita kecil tentang kita. Semoga masih banyak kenangan indah yang menunggu. ♡</p>
+</div></section>
+
+<section id="video"><div class="wrap">
+  <div class="section-head"><div class="kicker">Our little movie</div><h2>Video kenangan kita 🎞️</h2><p>Putar video ini saat Adik ingin mengingat momen-momen kita.</p></div>
+  <div class="video-card"><video controls playsinline preload="metadata" poster="images/kenangan-1.jpg"><source src="videos/kenangan.mp4" type="video/mp4">Browser kamu belum mendukung pemutaran video.</video></div>
+</div></section>
+
+<section id="cake"><div class="wrap">
+  <div class="section-head"><div class="kicker">Make a wish</div><h2>Waktunya tiup lilin, Adik! 🎂</h2><p>Pejamkan mata sebentar, buat satu harapan, lalu tekan tombol di bawah.</p></div>
+  <div class="cake-area">
+    <div class="cake" aria-label="Kue ulang tahun dengan satu lilin"><div class="candle"><div class="flame" id="flame"></div></div><div class="icing"></div><div class="cake-body"></div><div class="sprinkle">♡ · ✦ · ♡</div><div class="plate"></div></div>
+    <p class="cake-message" id="cakeText">Semoga semua harapan baik Adik menemukan jalan untuk menjadi nyata. Adik layak bahagia!</p>
+    <button class="btn" id="blowBtn">Tiup lilinnya ✨</button>
+  </div>
+</div></section>
+
+<section id="secret"><div class="wrap">
+  <div class="section-head"><div class="kicker">A message just for you</div><h2>Pesan rahasia dari Abang ♥️</h2><p>Ada pesan yang Abang simpan khusus untuk Adik. Buka perlahan, ya.</p></div>
+  <div class="secret"><div class="envelope" aria-hidden="true">♡</div>
+    <button class="btn" id="secretBtn">Buka pesan rahasia 💌</button>
+    <article class="secret-message" id="secretMessage">
+      <p><strong>Dear my favorite person,</strong></p>
+      <p>tepat hari ini 22 Oktober 2026 dan tepat hari ini pula adik abang tersayang genap 22 tahun, doa abang selalu menyertai adik semoga adik tetap sehat dan ceriaa selalu seperti biasa, karena bagi abang, kebahagian abang ada didalam diri adik, terima kasih sudah mau bersama laki laki yang belum bisa apa apa ini sayang, terima kasih sudah bisa mengerti susah dan senang abang, terima kasih yang mau mendengar kan keluh kesah abang, dan terima kasih juga karena sudah mau meladeni abang yang kadang kadang seperti anak kecil kalau dengan sayang, harapan abang semoga kita bisa melangkah sama sama untuk kedepan nya dan terkhusus juga untuk hubungan kita ini, sekali lagi terima kasih sayanggg abanggggg♥️</p>
+      <p class="closing">Dari Abang mu tersayang, untuk Adik tercinta. ♥️</p>
+    </article>
+  </div>
+</div></section>
+</main>
+<footer>Untuk Suci Okta Ramadhana ♡<br><small>Selamat ulang tahun ke-22 — 22 Oktober 2026<br>Dari Abang mu tersayang ♥️</small></footer>
+
+<script>
+function spawnHeart(){
+ const heart=document.createElement('span');heart.className='heart';heart.textContent=['♡','♥','💗','💕'][Math.floor(Math.random()*4)];
+ heart.style.left=Math.random()*100+'vw';heart.style.fontSize=(14+Math.random()*22)+'px';heart.style.color=['#e78caf','#f3a8c2','#d95f8d','#f4c0d2'][Math.floor(Math.random()*4)];
+ heart.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(heart);setTimeout(()=>heart.remove(),10500);
+}
+setInterval(spawnHeart,650);
+document.getElementById('blowBtn').addEventListener('click',()=>{
+ document.getElementById('flame').classList.add('off');
+ document.getElementById('cakeText').textContent='Yay! 🎉 Semoga harapan Adik terkabul satu per satu. Hari ini dan seterusnya, semoga Adik selalu punya alasan untuk tersenyum.';
+ const b=document.getElementById('blowBtn');b.textContent='Harapan terkirim ♡';b.disabled=true;
+ for(let i=0;i<18;i++)setTimeout(spawnHeart,i*90);
+});
+document.getElementById('secretBtn').addEventListener('click',()=>{
+ const msg=document.getElementById('secretMessage');msg.classList.toggle('show');
+ document.getElementById('secretBtn').textContent=msg.classList.contains('show')?'Tutup pesan ♡':'Buka pesan rahasia 💌';
+});
+const audio=document.getElementById('bgMusic'),musicBtn=document.getElementById('musicBtn');
+musicBtn.addEventListener('click',async()=>{
+ if(audio.paused){try{await audio.play();musicBtn.textContent='Ⅱ Jeda musik'}catch(e){musicBtn.textContent='▶ Tekan untuk memutar lagi'}}
+ else{audio.pause();musicBtn.textContent='▶ Putar Bergema Sampai Selamanya'}
+});
+audio.addEventListener('ended',()=>{musicBtn.textContent='▶ Putar Bergema Sampai Selamanya'});
+</script>
+</body></html>
